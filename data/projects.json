@@ -1,0 +1,24 @@
+{
+  "projects": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Bake Me Better Bakery",
+        "body": { "technologies": "technologies: html, css, javascript (vanilla)",
+                  "challenges": "challenges: this was one of the final projects in jonas schmedtmann's javascript course, and the largest in scale, and presented me with many challenges along the way that i, as a new developer, had not experienced yet.",
+                  "learned": "what i learned: this project was the point at which i finally understood that javascript is not just for aesthetics, but rather mostly for data management and manipulation. after this project, i had a new image of javascript and have progessed in a whole new way ever since."},
+        "image": { "fields": { "file": { "url": "./images/chocolate-rasp-mint.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "Project 2",
+        "body": { "technologies": "technologies: html, css, javascript (vanilla)",
+                  "challenges": "challenges: this was one of the final projects in jonas schmedtmann's javascript course, and the largest in scale, and presented me with many challenges along the way that i, as a new developer, had not experienced yet.",
+                  "learned": "what i learned: this project was the point at which i finally understood that javascript is not just for aesthetics, but rather mostly for data management and manipulation. after this project, i had a new image of javascript and have progessed in a whole new way ever since."},
+        "image": { "fields": { "file": { "url": "./images/chocolate-rasp-mint.jpg" } } }
+      }
+    }
+  ]
+}
