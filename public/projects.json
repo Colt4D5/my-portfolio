@@ -29,8 +29,8 @@
         "body": { "technologies": "css, react",
                   "challenges": "at the time of building this weather application, i was fairly comfortable in javascript, however, i was only a few days in to learning the react library, so this posed a great challenge for as small of a scope that this application is.",
                   "learned": "because i was so unfamiliar with react as a framework at the time of this build, i learned a great deal about how react functions and its component-based system such as passing arguments into components, fetching within a component, etc."},
-        "image": { "fields": { "file": { "url": "/assets/weather-thumbnail.gif" } },
-        "url": "https://mobile-weather-application.netlify.app/" }
+        "image": { "fields": { "file": { "url": "/assets/weather-thumbnail.gif" },
+                              "url": "https://mobile-weather-application.netlify.app/" } }
       }
     }
   ]
