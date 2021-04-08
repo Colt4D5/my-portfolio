@@ -16,7 +16,7 @@ const Contact = () => {
           <input type="text" id="email" name="email" placeholder="email address"/><br/>
           <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="phone number (xxx-xxx-xxxx)"/><br/>
           <textarea type="text" id="message" name="message" cols="40" rows="5" placeholder="message me for job inquiries, more information, or whatever else"></textarea><br/>
-          <input type="submit" id="submit" name="submit"/>
+          <input type="submit" id="submit" name="submit" value="submit"/>
         </form>
       </div>
     </section>
