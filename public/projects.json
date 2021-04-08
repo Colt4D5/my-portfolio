@@ -1,0 +1,26 @@
+{
+  "projects": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Bake Me Better Bakery",
+        "body": { "technologies": "css (sass), react",
+                  "challenges": "this was my first solo, large(ish)-scale project and presented me with many challenges regarding manipulation of data, working with a database (albeit merely a local json file), and much more.",
+                  "learned": "the model/view/controller (mvc) architechture kept me organized and made maneuvering my way through the data much easier than i though it would have otherwise been. the course i took through udemy really came into play as i took a similar approach to the architecture."},
+        "image": { "fields": { "file": { "url": "/assets/bakery-thumbnail.gif" },
+                              "url": "https://coltons-bakery.netlify.app/"} }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "bankist app",
+        "body": { "technologies": "html, css, javascript (vanilla), parcel bundler",
+                  "challenges": "this was one of the final projects in jonas schmedtmann's javascript course, and the largest in scale, and presented me with many challenges along the way that i, as a new developer, had not experienced yet.",
+                  "learned": "this project was the point at which i finally understood that javascript is not just for aesthetics, but rather mostly for data management and manipulation. after this project, i had a new image of javascript and have progessed in a whole new way ever since."},
+        "image": { "fields": { "file": { "url": "/assets/bakery-thumbnail.gif" } },
+        "url": "https://coltons-bakery.netlify.app/" }
+      }
+    }
+  ]
+}
