@@ -3,7 +3,18 @@
     {
       "sys": { "id": "1" },
       "fields": {
-        "title": "Bake Me Better Bakery",
+        "title": "forkify recipe app",
+        "body": { "technologies": "html, css (provided by course instructor), javascript (vanilla)",
+                  "challenges": "forkify was the final project for jonas schmedtmann's javascript (2021) course and utilized many new features, methods, and techniques (including es6 features) and greatly broadened my perspective and view of what javascript truly is and is capable of. ",
+                  "learned": "my main focus throughout this course was maintaining the knowledge gained therein and it was due to this mission that i chose to try much of the work myself before i participated in the course material, only referring to it when i was unable to proceed on my own. this, i believe, led to a successful and highly educational course wherein i learned invaluable skills that i now incorporate into my work."},
+        "image": { "fields": { "file": { "url": "/assets/forkify-thumbnail.gif" },
+                              "url": "https://recipe-app-forkify.netlify.app/"} }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "bake me better bakery",
         "body": { "technologies": "css (sass), react",
                   "challenges": "this was my first solo, large(ish)-scale project and presented me with many challenges regarding manipulation of data, working with a database (albeit merely a local json file), and much more.",
                   "learned": "the model/view/controller (mvc) architechture kept me organized and made maneuvering my way through the data much easier than i though it would have otherwise been. the course i took through udemy really came into play as i took a similar approach to the architecture."},
@@ -12,14 +23,14 @@
       }
     },
     {
-      "sys": { "id": "2" },
+      "sys": { "id": "3" },
       "fields": {
-        "title": "bankist app",
-        "body": { "technologies": "html, css, javascript (vanilla), parcel bundler",
-                  "challenges": "this was one of the final projects in jonas schmedtmann's javascript course, and the largest in scale, and presented me with many challenges along the way that i, as a new developer, had not experienced yet.",
-                  "learned": "this project was the point at which i finally understood that javascript is not just for aesthetics, but rather mostly for data management and manipulation. after this project, i had a new image of javascript and have progessed in a whole new way ever since."},
-        "image": { "fields": { "file": { "url": "/assets/bakery-thumbnail.gif" } },
-        "url": "https://coltons-bakery.netlify.app/" }
+        "title": "current weather application",
+        "body": { "technologies": "css, react",
+                  "challenges": "at the time of building this weather application, i was fairly comfortable in javascript, however, i was only a few days in to learning the react library, so this posed a great challenge for as small of a scope that this application is.",
+                  "learned": "because i was so unfamiliar with react as a framework at the time of this build, i learned a great deal about how react functions and its component-based system such as passing arguments into components, fetching within a component, etc."},
+        "image": { "fields": { "file": { "url": "/assets/weather-thumbnail.gif" } },
+        "url": "https://mobile-weather-application.netlify.app/" }
       }
     }
   ]
