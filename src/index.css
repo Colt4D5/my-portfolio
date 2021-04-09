@@ -367,6 +367,11 @@ html .section .section_heading {
           box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
+#contact .attribution {
+  font-size: 10px;
+  color: #aaa;
+}
+
 .links_container .inner {
   background-color: rgba(19, 10, 58, 0.75);
   padding: 3rem;
