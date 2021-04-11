@@ -3,6 +3,17 @@
     {
       "sys": { "id": "1" },
       "fields": {
+        "title": "netflix clone",
+        "body": { "technologies": "sass, react (including several libraries), firebase",
+                  "challenges": "this project is the largest in scope that i've accomplished to date, and presented me with many new trials, including deploying through firebase, fetching api through axios, as well as stylistically. the styling on this site was something new to me, but i think it looks great.",
+                  "learned": "through this large and extensive project, i learned how amazing react.js truly is. the scalability, the maintainability, and the intuitive component-based system is an amazing framework that i'm excited to explore more of."},
+        "image": { "fields": { "file": { "url": "/assets/netflix-thumbnail.gif" },
+                              "url": "https://netflix-clone-ebe90.firebaseapp.com/"} }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
         "title": "forkify recipe app",
         "body": { "technologies": "html, css (provided by course instructor), javascript (vanilla)",
                   "challenges": "forkify was the final project for jonas schmedtmann's javascript (2021) course and utilized many new features, methods, and techniques (including es6 features) and greatly broadened my perspective and view of what javascript truly is and is capable of. ",
@@ -12,7 +23,7 @@
       }
     },
     {
-      "sys": { "id": "2" },
+      "sys": { "id": "3" },
       "fields": {
         "title": "bake me better bakery",
         "body": { "technologies": "css (sass), react",
@@ -23,7 +34,7 @@
       }
     },
     {
-      "sys": { "id": "3" },
+      "sys": { "id": "4" },
       "fields": {
         "title": "current weather application",
         "body": { "technologies": "css, react",
