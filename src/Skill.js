@@ -1,8 +1,19 @@
-const Skill = ({comfort, lang, url}) => {
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
+const Skill = ({ comfort, lang, url, index }) => {
   const skill = lang.toLowerCase();
+  
+  useEffect( () => {
+    Aos.init({ 
+      duration: 400,
+    })
+    Aos.refresh();
+  }, [])
 
   return (
-    <div className="skill_container">
+    <div data-aos="fade-up-left" data-aos-delay={200 * index} data-aos-once="true" className="skill_container">
       <h2>{skill}</h2>
       <div className={"skill skill_" + skill}>
         <img src={url} alt="language icon"/>

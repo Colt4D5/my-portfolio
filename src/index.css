@@ -106,8 +106,6 @@ html .section .section_heading {
 .projects_inner .project {
   margin: 3rem 6rem;
   border-radius: 25px;
-  -webkit-transform: translateX(0) rotate(0deg);
-          transform: translateX(0) rotate(0deg);
   opacity: 1;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;

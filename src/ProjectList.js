@@ -1,14 +1,25 @@
+import React, { useEffect } from 'react';
 import ProjTechs from "./ProjTechs"
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const ProjectList = ({list}) => {
+  
+  useEffect( () => {
+    Aos.init({ 
+      duration: 800
+    })
+    Aos.refresh();
+  }, [])
+
   return (
     <div>
-      {list.map(proj => (
-        <article className="project" key={proj.sys.id}>
+      {list && list.map((proj, i) => (
+        <div data-aos={`fade-${i % 2 == 0 ? 'left' : 'right'}`} data-aos-once="true" className="project" key={proj.sys.id}>
           <div className="project_container">
             <div className="project_img">
               <a href={proj.fields.image.fields.url}>
-                <img src={proj.fields.image.fields.file.url} alt="project thumbnail"/>
+                <img src={proj.fields.image.fields.file.url} alt={`${proj.fields.title} thumbnail`} />
               </a>
             </div>
             <div className="project_details">
@@ -24,7 +35,7 @@ const ProjectList = ({list}) => {
           <div className="project_techs">
             <ProjTechs project={proj} />
           </div>
-        </article>
+        </div>
       ))}
     </div>
   );
