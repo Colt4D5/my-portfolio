@@ -104,22 +104,27 @@ html .section .section_heading {
 }
 
 .projects_inner .project {
-  margin: 1rem 6rem;
-  padding: 2rem;
+  margin: 3rem 6rem;
   border-radius: 25px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
-      grid-template-areas: 'details img';
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-transform: translateX(0) rotate(0deg);
           transform: translateX(0) rotate(0deg);
   opacity: 1;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+.projects_inner .project .project_container {
+  padding: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+      grid-template-areas: 'details img' 'techs techs';
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projects_inner .project:hover {
@@ -131,18 +136,21 @@ html .section .section_heading {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: img;
-  top: 0;
-  left: 0;
-  position: relative;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
   z-index: 1;
+  height: 100%;
 }
 
 .projects_inner .project .project_img img {
   width: 384px;
   height: 216px;
   position: relative;
-  -webkit-box-shadow: 12px 6px 6px rgba(19, 10, 58, 0.5);
-          box-shadow: 12px 6px 6px rgba(19, 10, 58, 0.5);
+  -webkit-box-shadow: 6px 6px 6px rgba(19, 10, 58, 0.5);
+          box-shadow: 6px 6px 6px rgba(19, 10, 58, 0.5);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .projects_inner .project .project_img img p {
@@ -157,15 +165,15 @@ html .section .section_heading {
 .projects_inner .project .project_img img:hover {
   width: 422.4px;
   height: 237.6px;
-  -webkit-box-shadow: 8px 6px 12px rgba(19, 10, 58, 0.5);
-          box-shadow: 8px 6px 12px rgba(19, 10, 58, 0.5);
+  -webkit-box-shadow: 8px 8px 12px rgba(19, 10, 58, 0.5);
+          box-shadow: 8px 8px 12px rgba(19, 10, 58, 0.5);
 }
 
 .projects_inner .project .project_details {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: details;
-  padding: 2rem 6rem;
+  padding: 1rem 2rem 0 2rem;
 }
 
 .projects_inner .project .project_details h1 {
@@ -178,13 +186,69 @@ html .section .section_heading {
   margin: 0.5rem 0;
 }
 
+.projects_inner .project .project_details .project_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2rem;
+}
+
+.projects_inner .project .project_details .project_links a {
+  background-color: rgba(19, 10, 58, 0.75);
+  font-family: 'Comfortaa', cursive;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border: 2px solid white;
+  margin: 0 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.projects_inner .project .project_details .project_links a:hover {
+  background-color: rgba(19, 10, 58, 0);
+  color: #130a3a;
+}
+
+.projects_inner .project .project_techs {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: techs;
+  width: 100%;
+  padding: 1rem 12rem;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 25px 25px;
+  -webkit-box-shadow: 0 -6px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 -6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.projects_inner .project .project_techs .icon_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .projects_inner .hidden {
   -webkit-transform: translateX(10%) rotate(-45deg);
           transform: translateX(10%) rotate(-45deg);
   opacity: 0;
 }
 
-.projects_inner .project:nth-child(odd) {
+.projects_inner .project:nth-child(odd) .project_container {
   -ms-grid-columns: 1fr 2fr;
       grid-template-columns: 1fr 2fr;
       grid-template-areas: 'img details';
@@ -249,9 +313,18 @@ html .section .section_heading {
   margin: 0 1.5rem;
 }
 
+.technologies_container .skill:hover img {
+  -webkit-animation: animate 1.2s infinite;
+          animation: animate 1.2s infinite;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+}
+
 .technologies_container .skill img {
   max-width: 80%;
-  max-height: 100%;
+  max-height: 80%;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
 }
 
 .technologies_container .container__progress {
@@ -293,6 +366,72 @@ html .section .section_heading {
   position: absolute;
   left: calc(10% + 6px);
   top: 10%;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    max-width: 80%;
+    max-height: 80%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    max-width: 90%;
+    max-height: 90%;
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  50% {
+    max-width: 80%;
+    max-height: 80%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    max-width: 90%;
+    max-height: 90%;
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  100% {
+    max-width: 80%;
+    max-height: 80%;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes animate {
+  0% {
+    max-width: 80%;
+    max-height: 80%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    max-width: 90%;
+    max-height: 90%;
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  50% {
+    max-width: 80%;
+    max-height: 80%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    max-width: 90%;
+    max-height: 90%;
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  100% {
+    max-width: 80%;
+    max-height: 80%;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
 }
 
 #contact {

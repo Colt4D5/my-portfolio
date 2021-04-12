@@ -16,9 +16,9 @@ const Links = () => {
         <div className="links">
           <h1>links</h1>
           <div className="icons">
-            <a href="https://www.google.com"><img alt="indeed icon" src="/assets/indeed-icon.png"/></a>
+            <a href="www.linkedin.com/in/colton-a-allen"><img alt="linkedin icon" src="https://img.icons8.com/material-rounded/48/ffffff/linkedin--v1.png"/></a>
             <a href="https://github.com/Colt4D5"><img alt="github icon" src="https://img.icons8.com/material-outlined/48/ffffff/github.png"/></a>
-            <a href="https://codepen.io/your-work"><img alt="codepen icon" src="https://img.icons8.com/material/50/ffffff/codepen.png"/></a>
+            <a href="https://codepen.io/Colt4D5"><img alt="codepen icon" src="https://img.icons8.com/material/48/ffffff/codepen.png"/></a>
           </div>
         </div>
       </div>

@@ -8,8 +8,15 @@
                   "challenges": "this project is the largest in scope that i've accomplished to date, and presented me with many new trials, including deploying through firebase, fetching api through axios, as well as stylistically. the styling on this site was something new to me, but i think it looks great.",
                   "learned": "through this large and extensive project, i learned how amazing react.js truly is. the scalability, the maintainability, and the intuitive component-based system is an amazing framework that i'm excited to explore more of."},
         "image": { "fields": { "file": { "url": "/assets/netflix-thumbnail.gif" },
-                              "url": "https://netflix-clone-ebe90.firebaseapp.com/"} }
-      }
+                              "url": "https://netflix-clone-ebe90.firebaseapp.com/",
+                              "github": "https://github.com/Colt4D5/netflix-clone.git" } }
+      },
+      "techs": [
+        "https://img.icons8.com/color/60/000000/css3.png",
+        "https://img.icons8.com/color/60/000000/sass.png",
+        "https://img.icons8.com/color/60/000000/react-native.png",
+        "https://img.icons8.com/color/60/000000/firebase.png"
+      ]
     },
     {
       "sys": { "id": "2" },
@@ -19,19 +26,32 @@
                   "challenges": "forkify was the final project for jonas schmedtmann's javascript (2021) course and utilized many new features, methods, and techniques (including es6 features) and greatly broadened my perspective and view of what javascript truly is and is capable of. ",
                   "learned": "my main focus throughout this course was maintaining the knowledge gained therein and it was due to this mission that i chose to try much of the work myself before i participated in the course material, only referring to it when i was unable to proceed on my own. this, i believe, led to a successful and highly educational course wherein i learned invaluable skills that i now incorporate into my work."},
         "image": { "fields": { "file": { "url": "/assets/forkify-thumbnail.gif" },
-                              "url": "https://recipe-app-forkify.netlify.app/"} }
-      }
+                              "url": "https://recipe-app-forkify.netlify.app/",
+                              "github": "https://github.com/Colt4D5/forkify-application.git" } }
+      },
+      "techs": [
+        "https://img.icons8.com/color/60/000000/html-5.png",
+        "https://img.icons8.com/color/60/000000/css3.png",
+        "https://img.icons8.com/color/60/000000/html-5--v2.png"
+      ]
     },
     {
       "sys": { "id": "3" },
       "fields": {
         "title": "bake me better bakery",
-        "body": { "technologies": "css (sass), react",
+        "body": { "technologies": "html, css (sass), JavaScript",
                   "challenges": "this was my first solo, large(ish)-scale project and presented me with many challenges regarding manipulation of data, working with a database (albeit merely a local json file), and much more.",
                   "learned": "the model/view/controller (mvc) architechture kept me organized and made maneuvering my way through the data much easier than i though it would have otherwise been. the course i took through udemy really came into play as i took a similar approach to the architecture."},
         "image": { "fields": { "file": { "url": "/assets/bakery-thumbnail.gif" },
-                              "url": "https://coltons-bakery.netlify.app/"} }
-      }
+                              "url": "https://coltons-bakery.netlify.app/",
+                              "github": "https://github.com/Colt4D5/bakery-shop.git" } }
+      },
+      "techs": [
+        "https://img.icons8.com/color/60/000000/html-5.png",
+        "https://img.icons8.com/color/60/000000/css3.png",
+        "https://img.icons8.com/color/60/000000/sass.png",
+        "https://img.icons8.com/color/60/000000/html-5--v2.png"
+      ]
     },
     {
       "sys": { "id": "4" },
@@ -41,8 +61,14 @@
                   "challenges": "at the time of building this weather application, i was fairly comfortable in javascript, however, i was only a few days in to learning the react library, so this posed a great challenge for as small of a scope that this application is.",
                   "learned": "because i was so unfamiliar with react as a framework at the time of this build, i learned a great deal about how react functions and its component-based system such as passing arguments into components, fetching within a component, etc."},
         "image": { "fields": { "file": { "url": "/assets/weather-thumbnail.gif" },
-                              "url": "https://mobile-weather-application.netlify.app/" } }
-      }
+                              "url": "https://mobile-weather-application.netlify.app/",
+                              "github": "https://github.com/Colt4D5/react-weather-app.git" } }
+      },
+      "techs": [
+        "https://img.icons8.com/color/60/000000/css3.png",
+        "https://img.icons8.com/color/60/000000/sass.png",
+        "https://img.icons8.com/color/60/000000/react-native.png"
+      ]
     }
   ]
 }

@@ -106,33 +106,40 @@ html {
 .projects_inner {
 
   .project {
-    margin: 1rem 6rem;
-    padding: 2rem;
+    margin: 3rem 6rem;
     border-radius: 25px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: 'details img';
-    align-items: center;
     transform: translateX(0) rotate(0deg);
     opacity: 1;
     transition: all 0.5s ease;
 
+    .project_container {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto auto;
+      grid-template-areas: 'details img'
+                            'techs techs';
+      align-items: center;
+    }
+
+    
     &:hover {
       box-shadow: 4px 8px 12px rgba(0,0,0,0.2);
     }
 
     .project_img {
       grid-area: img;
-      top: 0;
-      left: 0;
-      position: relative;
+      display: grid;
+      place-items: center;
       z-index: 1;
+      height: 100%;
 
       img {
         width: 384px;
         height: 216px;
         position: relative;
-        box-shadow: 12px 6px 6px rgba(19, 10, 58, 0.5);
+        box-shadow: 6px 6px 6px rgba(19, 10, 58, 0.5);
+        transition: all 0.4s ease;
 
         p {
           position: absolute;
@@ -145,13 +152,13 @@ html {
         &:hover {
           width: 422.4px;
           height: 237.6px;
-          box-shadow: 8px 6px 12px rgba(19, 10, 58, 0.5);
+          box-shadow: 8px 8px 12px rgba(19, 10, 58, 0.5);
         }
       }
     }
     .project_details {
       grid-area: details;
-      padding: 2rem 6rem;
+      padding: 1rem 2rem 0 2rem;
 
       h1 {
         margin: 2rem;
@@ -162,6 +169,46 @@ html {
       p {
         margin: 0.5rem 0;
       }
+
+      .project_links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+
+        a {
+          background-color: rgba(19, 10, 58, 0.75);
+          font-family: 'Comfortaa', cursive;
+          color: rgba(255,255,255,1);
+          padding: 8px 12px;
+          text-decoration: none;
+          border: 2px solid white;
+          margin: 0 8px;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: all 0.4s ease;
+
+          &:hover {
+            background-color: rgba(19, 10, 58, 0);
+            color: rgba(19, 10, 58, 1)
+          }
+        }
+      }
+    }
+
+    .project_techs {
+      grid-area: techs;
+      width: 100%;
+      padding: 1rem 12rem;
+      background: rgba(0,0,0,0.1);
+      border-radius: 0 0 25px 25px;
+      box-shadow: 0 -6px 8px rgba(0,0,0,0.2);
+
+      .icon_container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
     }
   }
 
@@ -170,7 +217,7 @@ html {
     opacity: 0;
   }
 
-  .project:nth-child(odd) {
+  .project:nth-child(odd) .project_container {
     grid-template-columns: 1fr 2fr ;
     grid-template-areas: 'img details';
   }
@@ -227,9 +274,16 @@ html {
     margin: 0 1.5rem;
     // border: 1px solid black;
 
+    &:hover img {
+      animation: animate 1.2s infinite;
+      animation-timing-function: linear;
+      -webkit-animation-timing-function: linear;
+    }
+
     img {
       max-width: 80%;
-      max-height: 100%;
+      max-height: 80%;
+      transform: rotate(0);
     }
   }
 
@@ -271,6 +325,34 @@ html {
         top: 10%;
       }
     }
+  }
+}
+
+@keyframes animate {
+  0% {
+    max-width: 80%;
+    max-height: 80%;
+    transform: rotate(0deg)
+  }
+  25% {
+    max-width: 90%;
+    max-height: 90%;
+    transform: rotate(4deg)
+  }
+  50% {
+    max-width: 80%;
+    max-height: 80%;
+    transform: rotate(0deg)
+  }
+  75% {
+    max-width: 90%;
+    max-height: 90%;
+    transform: rotate(-4deg)
+  }
+  100% {
+    max-width: 80%;
+    max-height: 80%;
+    transform: rotate(0)
   }
 }
 

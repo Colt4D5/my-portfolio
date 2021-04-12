@@ -14,7 +14,6 @@ const Projects = () => {
         return res.json();
       })
       .then(data => {
-        console.log(data);
         setLoading(false);
         const { projects } = data;
         setProjectData(projects);
