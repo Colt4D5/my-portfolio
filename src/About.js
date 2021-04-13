@@ -1,9 +1,21 @@
+import { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 const About = () => {
+  
+  useEffect( () => {
+    Aos.init({ 
+      offset: 800,
+      duration: 800
+    })
+  }, [])
+
   return (
     <div id="about" className="section about_container" style={{ backgroundImage: 'url(./assets/double-bubble-outline.png)', backgroundSize: 'auto' }}>
       <div className="inner about_inner">
         <h1 className="section_heading">about</h1>
-        <div className="about_content">
+        <div data-aos="fade-in" data-aos-once="true" className="about_content">
           <div className="column column_left">
             <p>i presently make kick-ass cakes as co-owner/operator and head baker of pink city cake studio and make kick-ass books even more kick ass as a freelance editor, but i also make kick-ass websites.</p>
           </div>

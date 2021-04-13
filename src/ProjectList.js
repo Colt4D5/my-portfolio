@@ -7,6 +7,7 @@ const ProjectList = ({list}) => {
   
   useEffect( () => {
     Aos.init({ 
+      offset: 300,
       duration: 800
     })
     Aos.refresh();

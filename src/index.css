@@ -107,6 +107,8 @@ html .section .section_heading {
   margin: 3rem 6rem;
   border-radius: 25px;
   opacity: 1;
+  -webkit-box-shadow: 4px 8px 12px rgba(0, 0, 0, 0);
+          box-shadow: 4px 8px 12px rgba(0, 0, 0, 0);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -258,7 +260,7 @@ html .section .section_heading {
 }
 
 .about_container .about_content {
-  padding: 6rem;
+  padding: 4rem 1rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];

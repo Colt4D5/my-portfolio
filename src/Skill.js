@@ -7,13 +7,13 @@ const Skill = ({ comfort, lang, url, index }) => {
   
   useEffect( () => {
     Aos.init({ 
-      duration: 400,
+      duration: 600,
     })
     Aos.refresh();
   }, [])
 
   return (
-    <div data-aos="fade-up-left" data-aos-delay={200 * index} data-aos-once="true" className="skill_container">
+    <div data-aos="fade-up-left" data-aos-delay={150 * index} data-aos-once="true" className="skill_container">
       <h2>{skill}</h2>
       <div className={"skill skill_" + skill}>
         <img src={url} alt="language icon"/>
