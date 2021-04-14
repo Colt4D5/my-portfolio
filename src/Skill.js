@@ -13,7 +13,7 @@ const Skill = ({ comfort, lang, url, index }) => {
   }, [])
 
   return (
-    <div data-aos="fade-up-left" data-aos-delay={150 * index} data-aos-once="true" className="skill_container">
+    <div className="skill_container" data-aos="fade-up-left" data-aos-delay={150 * index} data-aos-once="true" >
       <h2>{skill}</h2>
       <div className={"skill skill_" + skill}>
         <img src={url} alt="language icon"/>

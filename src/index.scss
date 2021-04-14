@@ -8,39 +8,38 @@
 
 html {
   font-family: 'Comfortaa', cursive;
+  font-size: 1rem;
 
-  .section_heading {
-    font-size: 3rem;
-    text-align: center;
-    padding: 3rem;
-    position: relative;
-    top: 0;
-    left: 0;
-
-    &::before {
-      content: '';
-      width: 100%;
-      height: 4px;
-      background-color:rgba(19, 10, 58, 1);
-      position: absolute;
-      bottom: 0;
-      left: 0;
-
-    }
-  }
-
-  .section {
+  section {
     background-color: #eee;
     padding: 2rem 0;
     position: relative;
 
     .section_heading {
       font-size: 3rem;
+      text-align: center;
+      padding: 3rem;
+      position: relative;
+      top: 0;
+      left: 0;
+      font-size: 3rem;
       padding: 2rem;
       text-shadow: 3px 2px 6px rgba(19, 10, 58, 0.5);
+  
+      &::before {
+        content: '';
+        width: 100%;
+        height: 4px;
+        background-color:rgba(19, 10, 58, 1);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
     }
   }
 }
+
+
 
 .landing {
   height: 100vh;
@@ -97,16 +96,11 @@ html {
   }
 }
 
-.projects_container {
-  margin: 0;
-  padding: 0;
-}
-
 
 .projects_inner {
 
   .project {
-    margin: 3rem 6rem;
+    margin: 3rem;
     border-radius: 25px;
     opacity: 1;
     box-shadow: 4px 8px 12px rgba(0,0,0,0);
@@ -114,51 +108,37 @@ html {
 
     .project_container {
       padding: 2rem;
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      grid-template-rows: auto auto;
-      grid-template-areas: 'details img'
-                            'techs techs';
+      display: flex;
+      flex-direction: row;
       align-items: center;
     }
-
+    
+    &:nth-child(odd) .project_container {
+      flex-direction: row-reverse;
+    }
     
     &:hover {
       box-shadow: 4px 8px 12px rgba(0,0,0,0.2);
     }
 
     .project_img {
-      grid-area: img;
-      display: grid;
-      place-items: center;
-      z-index: 1;
-      height: 100%;
+      flex-grow: 1;
 
       img {
-        width: 384px;
-        height: 216px;
-        position: relative;
+        margin-left: auto;
+        max-width: 100%;
         box-shadow: 6px 6px 6px rgba(19, 10, 58, 0.5);
         transition: all 0.4s ease;
 
-        p {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: white;
-        }
-
         &:hover {
-          width: 422.4px;
-          height: 237.6px;
+          transform: scale(1.2);
           box-shadow: 8px 8px 12px rgba(19, 10, 58, 0.5);
         }
       }
     }
     .project_details {
-      grid-area: details;
-      padding: 1rem 2rem 0 2rem;
+      flex-grow: 2;
+      padding: 1rem;
 
       h1 {
         margin: 2rem;
@@ -197,9 +177,8 @@ html {
     }
 
     .project_techs {
-      grid-area: techs;
       width: 100%;
-      padding: 1rem 12rem;
+      padding: 1rem 6rem;
       background: rgba(0,0,0,0.1);
       border-radius: 0 0 25px 25px;
       box-shadow: 0 -6px 8px rgba(0,0,0,0.2);
@@ -216,33 +195,28 @@ html {
     transform: translateX(10%) rotate(-45deg);
     opacity: 0;
   }
-
-  .project:nth-child(odd) .project_container {
-    grid-template-columns: 1fr 2fr ;
-    grid-template-areas: 'img details';
-  }
 }
+
+
 
 .about_container {
   box-shadow: inset 3px 6px 8px rgba(0,0,0,0.2),
               inset 3px -6px 8px rgba(0,0,0,0.2);
 
   .about_content {
-    padding: 4rem 1rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-
+    display: flex;
+    flex-direction: row;
 
     p {
+      flex-grow: 1;
       font-size: 1.2rem;
-    }
-
-    .column {
-      margin: 0 3rem;
+      padding: 0 1rem;
+      margin: 4rem 2rem;
     }
   }
 }
+
+
 
 .technologies_container {
   
@@ -356,12 +330,15 @@ html {
   }
 }
 
+
+
 #contact {
   box-shadow: inset 3px 6px 6px rgba(0,0,0,0.2);
   background-color: #fff;
 
   .inner {
-    width: 50%;
+    width: 70%;
+    min-width: 500px;
     margin: 2rem auto;
     padding: 2rem 6rem;
     display: flex;
@@ -379,7 +356,7 @@ html {
     input {
       font-family: 'Comfortaa', cursive;
       font-size: 1.2rem;
-      width: 500px;
+      width: 90%;
       margin: 1rem 0;
       padding: 1rem 2rem;
       border: none;
@@ -390,7 +367,7 @@ html {
     #message {
       font-family: 'Comfortaa', cursive;
       font-size: 1.2rem;
-      width: 500px;
+      width: 90%;
       margin: 1rem 0;
       padding: 1rem 2rem;
       border: none;
@@ -419,6 +396,8 @@ html {
     color: #aaa;
   }
 }
+
+
 
 .links_container {
 
@@ -473,6 +452,9 @@ html {
   }
 }
 
+
+
+
 .footer_container {
 
   .inner {
@@ -481,5 +463,69 @@ html {
     display: grid;
     place-items: center;
     color: rgba(255,255,255,0.75);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .project_container {
+    flex-direction: column !important;
+  }
+
+  .about_content {
+    flex-direction: column !important;
+
+    p {
+      flex-grow: 1 !important;
+      margin: 1rem !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .project_container {
+    flex-direction: column !important;
+  }
+
+  .about_content {
+    flex-direction: column !important;
+
+    p {
+      flex-grow: 1 !important;
+      margin: 1rem !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .project_container {
+    flex-direction: column !important;
+  }
+
+  .about_content {
+    flex-direction: column !important;
+
+    p {
+      flex-grow: 1 !important;
+      margin: 1rem !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .project_container {
+    flex-direction: row !important;
+  }
+
+  .project_techs {
+    padding: 2rem 3rem !important;
+  }
+
+  .about_content {
+    flex-direction: row !important;
+
+    p {
+      flex-grow: 1 !important;
+      margin:3rem 1rem !important;
+    }
   }
 }
