@@ -6,7 +6,7 @@ const About = () => {
   
   useEffect( () => {
     Aos.init({ 
-      duration: 800
+      duration: 1600
     })
   }, [])
 

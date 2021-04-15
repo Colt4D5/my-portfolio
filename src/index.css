@@ -139,8 +139,7 @@ html section .section_heading::before {
 }
 
 .projects_inner .project .project_img img {
-  margin-left: auto;
-  max-width: 100%;
+  width: 30vw;
   -webkit-box-shadow: 6px 6px 6px rgba(19, 10, 58, 0.5);
           box-shadow: 6px 6px 6px rgba(19, 10, 58, 0.5);
   -webkit-transition: all 0.4s ease;
@@ -155,9 +154,9 @@ html section .section_heading::before {
 }
 
 .projects_inner .project .project_details {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
   padding: 1rem;
 }
 
@@ -205,7 +204,7 @@ html section .section_heading::before {
 
 .projects_inner .project .project_techs {
   width: 100%;
-  padding: 1rem 6rem;
+  padding: 0.5rem 6rem;
   background: rgba(0, 0, 0, 0.1);
   border-radius: 0 0 25px 25px;
   -webkit-box-shadow: 0 -6px 8px rgba(0, 0, 0, 0.2);
@@ -516,6 +515,7 @@ html section .section_heading::before {
 }
 
 .links_container .inner .resume_box {
+  visibility: hidden;
   background-color: transparent;
   padding: 1rem;
   border-radius: 20px;
@@ -566,6 +566,9 @@ html section .section_heading::before {
         -ms-flex-direction: column !important;
             flex-direction: column !important;
   }
+  .project_container img {
+    width: 80% !important;
+  }
   .about_content {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
@@ -576,7 +579,7 @@ html section .section_heading::before {
     -webkit-box-flex: 1 !important;
         -ms-flex-positive: 1 !important;
             flex-grow: 1 !important;
-    margin: 1rem !important;
+    margin: 1rem 3rem !important;
   }
 }
 
@@ -587,6 +590,9 @@ html section .section_heading::before {
         -ms-flex-direction: column !important;
             flex-direction: column !important;
   }
+  .project_container img {
+    width: 80% !important;
+  }
   .about_content {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
@@ -597,7 +603,7 @@ html section .section_heading::before {
     -webkit-box-flex: 1 !important;
         -ms-flex-positive: 1 !important;
             flex-grow: 1 !important;
-    margin: 1rem !important;
+    margin: 1rem 3rem !important;
   }
 }
 
@@ -608,6 +614,9 @@ html section .section_heading::before {
         -ms-flex-direction: column !important;
             flex-direction: column !important;
   }
+  .project_container img {
+    width: 80% !important;
+  }
   .about_content {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
@@ -618,7 +627,7 @@ html section .section_heading::before {
     -webkit-box-flex: 1 !important;
         -ms-flex-positive: 1 !important;
             flex-grow: 1 !important;
-    margin: 1rem !important;
+    margin: 1rem 3rem !important;
   }
 }
 
@@ -629,8 +638,25 @@ html section .section_heading::before {
         -ms-flex-direction: row !important;
             flex-direction: row !important;
   }
+  .project_container .project_img {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .project_container .project_img img {
+    width: 30vw !important;
+  }
+  .project:nth-child(odd) .project_container {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: row-reverse !important;
+            flex-direction: row-reverse !important;
+  }
   .project_techs {
-    padding: 2rem 3rem !important;
+    padding: 1rem 3rem !important;
   }
   .about_content {
     -webkit-box-orient: horizontal !important;

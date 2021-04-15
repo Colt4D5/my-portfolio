@@ -125,8 +125,7 @@ html {
       flex-grow: 1;
 
       img {
-        margin-left: auto;
-        max-width: 100%;
+        width: 30vw;
         box-shadow: 6px 6px 6px rgba(19, 10, 58, 0.5);
         transition: all 0.4s ease;
 
@@ -137,7 +136,7 @@ html {
       }
     }
     .project_details {
-      flex-grow: 2;
+      flex-grow: 3;
       padding: 1rem;
 
       h1 {
@@ -178,7 +177,7 @@ html {
 
     .project_techs {
       width: 100%;
-      padding: 1rem 6rem;
+      padding: 0.5rem 6rem;
       background: rgba(0,0,0,0.1);
       border-radius: 0 0 25px 25px;
       box-shadow: 0 -6px 8px rgba(0,0,0,0.2);
@@ -423,6 +422,7 @@ html {
     }
 
     .resume_box {
+      visibility: hidden;
       background-color: transparent;
       padding: 1rem;
       border-radius: 20px;
@@ -469,6 +469,10 @@ html {
 @media only screen and (max-width: 600px) {
   .project_container {
     flex-direction: column !important;
+
+    img {
+      width: 80% !important;
+    }
   }
 
   .about_content {
@@ -476,7 +480,7 @@ html {
 
     p {
       flex-grow: 1 !important;
-      margin: 1rem !important;
+      margin: 1rem 3rem !important;
     }
   }
 }
@@ -484,6 +488,10 @@ html {
 @media only screen and (min-width: 600px) {
   .project_container {
     flex-direction: column !important;
+
+    img {
+      width: 80% !important;
+    }
   }
 
   .about_content {
@@ -491,7 +499,7 @@ html {
 
     p {
       flex-grow: 1 !important;
-      margin: 1rem !important;
+      margin: 1rem 3rem !important;
     }
   }
 }
@@ -499,6 +507,10 @@ html {
 @media only screen and (min-width: 768px) {
   .project_container {
     flex-direction: column !important;
+
+    img {
+      width: 80% !important;
+    }
   }
 
   .about_content {
@@ -506,7 +518,7 @@ html {
 
     p {
       flex-grow: 1 !important;
-      margin: 1rem !important;
+      margin: 1rem 3rem !important;
     }
   }
 }
@@ -514,10 +526,23 @@ html {
 @media only screen and (min-width: 992px) {
   .project_container {
     flex-direction: row !important;
+
+    .project_img {
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 30vw !important;
+      }
+    }
+  }
+
+  .project:nth-child(odd) .project_container {
+    flex-direction: row-reverse !important;
   }
 
   .project_techs {
-    padding: 2rem 3rem !important;
+    padding: 1rem 3rem !important;
   }
 
   .about_content {
@@ -525,7 +550,7 @@ html {
 
     p {
       flex-grow: 1 !important;
-      margin:3rem 1rem !important;
+      margin: 3rem 1rem !important;
     }
   }
 }
