@@ -515,7 +515,6 @@ html section .section_heading::before {
 }
 
 .links_container .inner .resume_box {
-  visibility: hidden;
   background-color: transparent;
   padding: 1rem;
   border-radius: 20px;
